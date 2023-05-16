@@ -1,0 +1,12 @@
+CRITICAL - 2023-04-14 06:48:28 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-14 06:49:19 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

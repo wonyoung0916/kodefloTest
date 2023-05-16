@@ -1,0 +1,1807 @@
+CRITICAL - 2023-05-02 03:34:25 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('qF8XANsbxy')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 03:34:25 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 06:00:41 --> mysqli_sql_exception: Unknown column 'LV33' in 'field list' in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(158): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(39): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('CuseB2g03f')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 06:00:41 --> Unknown column 'LV33' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    LV33
+                FROMrqwrRICE_PER_LEVEL
+                WHERE 1=1
+                AND G_SEQ = \'733\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    LV33
+                FROMrqwrRICE_PER_LEVEL
+                WHERE 1=1
+                AND G_SEQ = \'733\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    LV33
+                FROMrqwrRICE_PER_LEVEL
+                WHERE 1=1
+                AND G_SEQ = \'733\'
+        ')
+ 4 APPPATH\Models\UrlModel.php(158): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    LV33
+                FROMrqwrRICE_PER_LEVEL
+                WHERE 1=1
+                AND G_SEQ = \'733\'
+        ')
+ 5 APPPATH\Controllers\Redirect.php(39): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('CuseB2g03f')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 06:00:41 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:10:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:10:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:10:01 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:02 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:06 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:30 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:31 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:31 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:31 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:31 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:33 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:37 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:38 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:38 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:39 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:11:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:11:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:11:50 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:10 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:12 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:14 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:15 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:16 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:16 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:16 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:16 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:34 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:39 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:12:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:12:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:12:51 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:12 --> Call to undefined function App\Controllers\show_500()
+in APPPATH\Controllers\Redirect.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:12 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:13 --> Call to undefined function App\Controllers\show_500()
+in APPPATH\Controllers\Redirect.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:13 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:13 --> Call to undefined function App\Controllers\show_500()
+in APPPATH\Controllers\Redirect.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:14 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:14 --> Call to undefined function App\Controllers\show_500()
+in APPPATH\Controllers\Redirect.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:13:14 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 07:14:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6 in D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\data\source\kodefloTest\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\data\source\kodefloTest\htdocs\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\data\source\kodefloTest\htdocs\app\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('\r\n             ...')
+#4 D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint(Array)
+#5 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+#6 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+#7 D:\data\source\kodefloTest\htdocs\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\data\source\kodefloTest\htdocs\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 07:14:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.1.43' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 4 APPPATH\Models\UrlModel.php(130): CodeIgniter\Database\BaseConnection->query('
+                SELECT
+                    COUNT(1) AS CNT
+                FROM PAY_AMOUNT_HISTORY
+                WHERE 1=1
+                AND URL_SEQ = 142
+                AND CREATED_IP = 192.168.1.43
+        ')
+ 5 APPPATH\Controllers\Redirect.php(41): App\Models\UrlModel->setUserPoint([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('3nSBOAqfuz')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:14:14 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:14:26 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:50:52 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:51:19 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:56:11 --> Call to a member function ip_address() on null
+in APPPATH\Controllers\Redirect.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('iIYf95BwtZ')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:56:11 --> Call to a member function ip_address() on null
+in APPPATH\Controllers\Redirect.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:56:24 --> Call to a member function ip_address() on null
+in APPPATH\Controllers\Redirect.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('iIYf95BwtZ')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:56:24 --> Call to a member function ip_address() on null
+in APPPATH\Controllers\Redirect.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:56:26 --> Call to a member function ip_address() on null
+in APPPATH\Controllers\Redirect.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('iIYf95BwtZ')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 07:56:26 --> Call to a member function ip_address() on null
+in APPPATH\Controllers\Redirect.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:29:31 --> Call to a member function helper() on null
+in APPPATH\Controllers\Redirect.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:29:31 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:29:39 --> The route for "1" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('1')
+ 2 SYSTEMPATH\Common.php(880): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Redirect.php(50): redirect('1', 'refresh', 5)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:29:39 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:31:20 --> Argument 1 passed to redirect() must be of the type string or null, object given, called in D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php on line 50
+in SYSTEMPATH\Common.php on line 875.
+ 1 APPPATH\Controllers\Redirect.php(50): redirect(Object(CodeIgniter\HTTP\RedirectResponse), 'refresh', 5)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:31:20 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:32:26 --> Argument 1 passed to redirect() must be of the type string or null, object given, called in D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php on line 50
+in SYSTEMPATH\Common.php on line 875.
+ 1 APPPATH\Controllers\Redirect.php(50): redirect(Object(CodeIgniter\HTTP\RedirectResponse), 'refresh', 5)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:32:26 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:05 --> strpos() expects parameter 1 to be string, object given
+in SYSTEMPATH\Helpers\url_helper.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expects parameter 1 to be string, object given', 'D:\\data\\source\\kodefloTest\\htdocs\\system\\Helpers\\url_helper.php', 60, [...])
+ 2 SYSTEMPATH\Helpers\url_helper.php(60): strpos(Object(CodeIgniter\HTTP\RedirectResponse), '://')
+ 3 SYSTEMPATH\Helpers\url_helper.php(118): _get_uri(Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 APPPATH\Controllers\Redirect.php(52): site_url(Object(CodeIgniter\HTTP\RedirectResponse))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:06 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:21 --> strpos() expects parameter 1 to be string, object given
+in SYSTEMPATH\Helpers\url_helper.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expects parameter 1 to be string, object given', 'D:\\data\\source\\kodefloTest\\htdocs\\system\\Helpers\\url_helper.php', 60, [...])
+ 2 SYSTEMPATH\Helpers\url_helper.php(60): strpos(Object(CodeIgniter\HTTP\RedirectResponse), '://')
+ 3 SYSTEMPATH\Helpers\url_helper.php(118): _get_uri(Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 APPPATH\Controllers\Redirect.php(52): site_url(Object(CodeIgniter\HTTP\RedirectResponse))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:22 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:24 --> strpos() expects parameter 1 to be string, object given
+in SYSTEMPATH\Helpers\url_helper.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expects parameter 1 to be string, object given', 'D:\\data\\source\\kodefloTest\\htdocs\\system\\Helpers\\url_helper.php', 60, [...])
+ 2 SYSTEMPATH\Helpers\url_helper.php(60): strpos(Object(CodeIgniter\HTTP\RedirectResponse), '://')
+ 3 SYSTEMPATH\Helpers\url_helper.php(118): _get_uri(Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 APPPATH\Controllers\Redirect.php(52): site_url(Object(CodeIgniter\HTTP\RedirectResponse))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:24 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:27 --> strpos() expects parameter 1 to be string, object given
+in SYSTEMPATH\Helpers\url_helper.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expects parameter 1 to be string, object given', 'D:\\data\\source\\kodefloTest\\htdocs\\system\\Helpers\\url_helper.php', 60, [...])
+ 2 SYSTEMPATH\Helpers\url_helper.php(60): strpos(Object(CodeIgniter\HTTP\RedirectResponse), '://')
+ 3 SYSTEMPATH\Helpers\url_helper.php(118): _get_uri(Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 4 APPPATH\Controllers\Redirect.php(52): site_url(Object(CodeIgniter\HTTP\RedirectResponse))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:27 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:41 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:57 --> Argument 1 passed to CodeIgniter\HTTP\RedirectResponse::to() must be of the type string, object given, called in D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php on line 53
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 32.
+ 1 APPPATH\Controllers\Redirect.php(53): CodeIgniter\HTTP\RedirectResponse->to(Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:57 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:59 --> Argument 1 passed to CodeIgniter\HTTP\RedirectResponse::to() must be of the type string, object given, called in D:\data\source\kodefloTest\htdocs\app\Controllers\Redirect.php on line 53
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 32.
+ 1 APPPATH\Controllers\Redirect.php(53): CodeIgniter\HTTP\RedirectResponse->to(Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:34:59 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:35:45 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::wait()
+in APPPATH\Controllers\Redirect.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:35:45 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:35:52 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::wait()
+in APPPATH\Controllers\Redirect.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:35:52 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:36:20 --> Call to undefined method CodeIgniter\HTTP\RedirectResponse::wait()
+in APPPATH\Controllers\Redirect.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('84gEJPWUmh')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:36:20 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:39:16 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:39:36 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:39:45 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 08:47:59 --> Call to undefined function App\Controllers\show_404()
+in APPPATH\Controllers\Redirect.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Redirect->index('favicon.ico')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Redirect))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
