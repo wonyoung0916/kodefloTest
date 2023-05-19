@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="95d00de6-d941-47dc-a2be-505aaed4b559" name="코드플로서브도메인">
+      <webServer id="95d00de6-d941-47dc-a2be-505aaed4b559" name="코드플로서브도메인" url="http://api.kodeflo.com">
         <fileTransfer rootFolder="/data/api.kodeflo.com/htdocs" accessType="SFTP" host="106.10.33.119" port="2422" sshConfigId="ba903851-598e-42b1-a951-1190006f244c" sshConfig="idevel@106.10.33.119:2422 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
