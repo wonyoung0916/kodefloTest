@@ -51,7 +51,7 @@ class Redirect extends Controller
                 }
             }
 
-/*            $key = "kodefloKey"; // 암호화에 사용될 키
+            $key = "kodefloKey"; // 암호화에 사용될 키
             $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length('AES-256-CBC'));
             $e_g_seq = openssl_encrypt($g_seq, 'AES-256-CBC', $key, 0, $iv);
             $e_m_seq = openssl_encrypt($m_seq, 'AES-256-CBC', $key, 0, $iv);
@@ -59,12 +59,12 @@ class Redirect extends Controller
             // 암호화된 데이터와 IV 값을 저장
             $encryptedDataWithIV_g_seq = base64_encode($iv . $e_g_seq);
             $encryptedDataWithIV_m_seq = base64_encode($iv . $e_m_seq);
-            $encryptedDataWithIV_u_seq = base64_encode($iv . $e_u_seq);*/
+            $encryptedDataWithIV_u_seq = base64_encode($iv . $e_u_seq);
 
             if (strpos($longUrl,'?')){
-                return redirect()->to($longUrl.'&jid='.$g_seq.'&uid='.$m_seq.'&rd=15'.'&at='.$u_seq); // 원래 URL로 리다이렉트
+                return redirect()->to($longUrl.'&jid='.$encryptedDataWithIV_g_seq.'&uid='.$encryptedDataWithIV_m_seq.'&rd=15'.'&at='.$encryptedDataWithIV_u_seq); // 원래 URL로 리다이렉트
             }
-            return redirect()->to($longUrl.'?jid='.$g_seq.'&uid='.$m_seq.'&rd=15'.'&at='.$m_seq); // 원래 URL로 리다이렉트
+            return redirect()->to($longUrl.'?jid='.$encryptedDataWithIV_g_seq.'&uid='.$encryptedDataWithIV_m_seq.'&rd=15'.'&at='.$encryptedDataWithIV_u_seq); // 원래 URL로 리다이렉트
         } else {
             return show_404(); // 원래 URL이 없을 경우 404 에러 페이지 출력
         }
