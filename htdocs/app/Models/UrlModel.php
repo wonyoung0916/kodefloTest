@@ -122,13 +122,49 @@ class UrlModel extends Model
             return false;
         }
 
+        // 일일상한 확인
+        $query = "
+                SELECT
+                C_MAXIMUM
+                FROM GOODS
+                WHERE 1=1
+                AND SEQ = {$params['g_seq']}
+        ";
+        $result = $this->db->query($query);
+        if (!$result){
+            return false;
+        }
+        $data   = $result->getRow();
+        $max    = !empty($data->C_MAXIMUM)  ?   $data->C_MAXIMUM    : 0;
+
+        // 일일 상한이 있을 때
+        if ($max != 0){
+            $query = "
+                    SELECT
+                    COUNT(1) AS CNT
+                    FROM PAY_AMOUNT_HISTORY
+                    WHERE 1=1
+                    AND AD_SEQ = {$params['g_seq']}
+                    AND DATE_FORMAT(CREATED_AT, '%Y-%m-%d') = CURDATE()
+            ";
+            $result = $this->db->query($query);
+            if (!$result){
+                return false;
+            }
+            $data   = $result->getRow();
+            $cnt    = !empty($data->CNT)  ?   $data->CNT    : 0;
+            if ($cnt == $max){
+                return false;
+            }
+        }
+
         // 해당 ip에서 추가된 URL로 접속한 이력이 있는지 체크
         $query = "
                 SELECT
                     COUNT(1) AS CNT
                 FROM PAY_AMOUNT_HISTORY
                 WHERE 1=1
-                AND URL_SEQ = {$params['u_seq']}
+                AND AD_SEQ = {$params['g_seq']}
                 AND CREATED_IP = '{$params['ip']}'
         ";
         $result = $this->db->query($query);
