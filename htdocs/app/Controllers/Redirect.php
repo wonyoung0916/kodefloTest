@@ -41,7 +41,7 @@ class Redirect extends Controller
                 if ($g_type === '클릭형') {
                     // 클릭 포인트 지급
                     $pointRtn = $urlModel->setUserPoint($params);
-                    if ($pointRtn) {
+                    if ($pointRtn OR $pointRtn == 1) {
                         return redirect()->to($longUrl);
                     } else {
                         return show_500();

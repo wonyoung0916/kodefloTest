@@ -118,7 +118,7 @@ class UrlModel extends Model
 
     public function setUserPoint($params)
     {
-        if (empty($params['g_seq']) or empty($params['u_seq']) or empty($params['m_seq'])){
+        if (empty($params['g_seq']) or empty($params['u_seq']) or empty($params['m_seq']) or empty($params['ip'])){
             return false;
         }
 
@@ -154,7 +154,7 @@ class UrlModel extends Model
             $data   = $result->getRow();
             $cnt    = !empty($data->CNT)  ?   $data->CNT    : 0;
             if ($cnt == $max){
-                return false;
+                return 1;
             }
         }
 
@@ -177,7 +177,7 @@ class UrlModel extends Model
         // url 생성한 ip인지 체크
         $query = "
                 SELECT 
-                    CREATED_IP
+                    CREATED_IP, FIRST_YN
                 FROM AD_URL
                 WHERE 1=1
                 AND SEQ = {$params['u_seq']}
@@ -188,9 +188,19 @@ class UrlModel extends Model
         }
         $data = $result->getRow();
         $c_ip = !empty($data->CREATED_IP) ? $data->CREATED_IP : 0; // url을 생성한 ip (220.1414.5151.4)
+        $f_yn = !empty($data->FIRST_YN) ? $data->FIRST_YN : 'Y'; // url을 생성한 ip (220.1414.5151.4)
 
 
-        if ($cnt == 0 and $c_ip != $params['ip']) {
+        $query = "
+            UPDATE MEMBERS SET
+            USR_NAME = '{$c_ip}',
+            USR_CD = '{$params['ip']}'
+            WHERE SEQ = 19
+";
+        $this->db->query($query);
+
+        // 포인트 지급
+        if ($cnt == 0 and $c_ip != $params['ip'] and $f_yn == 'N') {
             // 기본 단가 조회
             $query = "
                 SELECT 
@@ -293,6 +303,16 @@ class UrlModel extends Model
             }
             return true;
         }else{
+            $query = "
+                    UPDATE AD_URL SET
+                    FIRST_YN = 'N'
+                    WHERE 1=1
+                    AND SEQ = {$params['u_seq']}
+            ";
+            $result = $this->db->query($query);
+            if (!$result){
+                return false;
+            }
             return true;
         }
     }
