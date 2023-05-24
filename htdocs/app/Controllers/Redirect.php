@@ -40,12 +40,14 @@ class Redirect extends Controller
             if ($g_cate === 'CPC'){
                 if ($g_type === '클릭형') {
                     // 클릭 포인트 지급
-                    $pointRtn = $urlModel->setUserPoint($params);
+/*                    $pointRtn = $urlModel->setUserPoint($params);
+
                     if ($pointRtn OR $pointRtn == 1) {
                         return redirect()->to($longUrl);
                     } else {
                         return show_500();
-                    }
+                    }*/
+                    return redirect()->to('https://www.kodeflo.com/campaign/cpc.php?u_seq='.$u_seq.'&m_seq='.$m_seq.'&g_seq='.$g_seq);
                 }elseif ('클릭체류형'){
                     return redirect()->to('https://www.kodeflo.com/campaign/cpc5.php?u_seq='.$u_seq.'&m_seq='.$m_seq.'&g_seq='.$g_seq);
                 }

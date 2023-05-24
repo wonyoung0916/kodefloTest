@@ -188,16 +188,7 @@ class UrlModel extends Model
         }
         $data = $result->getRow();
         $c_ip = !empty($data->CREATED_IP) ? $data->CREATED_IP : 0; // url을 생성한 ip (220.1414.5151.4)
-        $f_yn = !empty($data->FIRST_YN) ? $data->FIRST_YN : 'Y'; // url을 생성한 ip (220.1414.5151.4)
-
-
-        $query = "
-            UPDATE MEMBERS SET
-            USR_NAME = '{$c_ip}',
-            USR_CD = '{$params['ip']}'
-            WHERE SEQ = 19
-";
-        $this->db->query($query);
+        $f_yn = !empty($data->FIRST_YN) ? $data->FIRST_YN : 'Y';
 
         // 포인트 지급
         if ($cnt == 0 and $c_ip != $params['ip'] and $f_yn == 'N') {
