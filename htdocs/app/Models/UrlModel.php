@@ -101,7 +101,7 @@ class UrlModel extends Model
     {
         $query = "
                 SELECT
-                    G_CATE, G_TYPE
+                    G_CATE, G_TYPE, TRACKING
                 FROM GOODS
                 WHERE 1=1
                 AND SEQ = {$g_seq}
